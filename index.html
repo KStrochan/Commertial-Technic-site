@@ -7,6 +7,17 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="site-loader" id="site-loader" aria-hidden="false">
+  <div class="site-loader-inner">
+    <div class="site-loader-spinner"></div>
+    <span class="site-loader-text">Loading TechStore Pro...</span>
+  </div>
+</div>
+<div class="premium-bg">
+  <span class="premium-orb premium-orb-1"></span>
+  <span class="premium-orb premium-orb-2"></span>
+  <span class="premium-orb premium-orb-3"></span>
+</div>
   <header class="site-header">
     <div class="container header-inner">
       <a href="#" class="logo">
@@ -22,7 +33,11 @@
       </nav>
 
       <div class="header-actions">
+        
         <button class="icon-btn" aria-label="Search">⌕</button>
+        <button class="account-btn" id="account-btn" type="button" aria-label="Account">
+  👤
+</button>
         <button class="cart-btn" aria-label="Cart">
           Cart
           <span class="cart-count">3</span>
@@ -82,6 +97,15 @@
               <h3>Nova X Pro</h3>
               <span>$899</span>
             </div>
+            <button
+  class="btn btn-primary add-to-cart-btn"
+  data-id="nova-x-pro"
+  data-name="Nova X Pro"
+  data-price="899"
+  data-image="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80"
+>
+  Add to Cart
+</button>
           </div>
 
           <div class="preview-small-grid">
@@ -153,10 +177,18 @@
         </div>
 
         <div class="products-grid" id="products-grid">
-          <article class="product-card reveal" data-category="smartphone" data-name="Nova X Pro">
+          <article
+  class="product-card reveal"
+  data-category="smartphone"
+  data-name="Nova X Pro"
+  data-description="Flagship performance with premium camera and display."
+>
             <div class="product-image-wrap">
               <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80" alt="Nova X Pro" />
               <span class="product-badge">Best Seller</span>
+              <button class="wishlist-btn" type="button" data-id="nova-x-pro" aria-label="Add to favorites">
+    ♡
+  </button>
             </div>
             <div class="product-body">
               <p class="product-category">Smartphone</p>
@@ -167,15 +199,31 @@
                   <span class="old-price">$999</span>
                   <span class="product-price">$899</span>
                 </div>
-                <button class="btn btn-primary">Add to Cart</button>
+                <button
+  class="btn btn-primary add-to-cart-btn"
+  data-id="nova-x-pro"
+  data-name="Nova X Pro"
+  data-price="899"
+  data-image="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80"
+>
+  Add to Cart
+</button>
               </div>
             </div>
           </article>
 
-          <article class="product-card reveal" data-category="laptop" data-name="AeroBook 14">
+          <article
+  class="product-card reveal"
+  data-category="laptop"
+  data-name="AeroBook 14"
+  data-description="Slim and powerful laptop for work and productivity."
+>
             <div class="product-image-wrap">
               <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80" alt="AeroBook 14" />
               <span class="product-badge">New</span>
+              <button class="wishlist-btn" type="button" data-id="aerobook-14" aria-label="Add to favorites">
+    ♡
+  </button>
             </div>
             <div class="product-body">
               <p class="product-category">Laptop</p>
@@ -186,15 +234,31 @@
                   <span class="old-price">$1399</span>
                   <span class="product-price">$1249</span>
                 </div>
-                <button class="btn btn-primary">Add to Cart</button>
+                <button
+  class="btn btn-primary add-to-cart-btn"
+  data-id="aerobook-14"
+  data-name="AeroBook 14"
+  data-price="1249"
+  data-image="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80"
+>
+  Add to Cart
+</button>
               </div>
             </div>
           </article>
 
-          <article class="product-card reveal" data-category="audio" data-name="Pulse Studio">
+          <article
+  class="product-card reveal"
+  data-category="audio"
+  data-name="Pulse Studio"
+  data-description="Wireless headphones with strong bass and clean sound."
+>
             <div class="product-image-wrap">
               <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80" alt="Pulse Studio" />
               <span class="product-badge">Hot Deal</span>
+              <button class="wishlist-btn" type="button" data-id="pulse-studio" aria-label="Add to favorites">
+    ♡
+  </button>
             </div>
             <div class="product-body">
               <p class="product-category">Audio</p>
@@ -205,15 +269,31 @@
                   <span class="old-price">$249</span>
                   <span class="product-price">$199</span>
                 </div>
-                <button class="btn btn-primary">Add to Cart</button>
+                <button
+  class="btn btn-primary add-to-cart-btn"
+  data-id="pulse-studio"
+  data-name="Pulse Studio"
+  data-price="199"
+  data-image="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80"
+>
+  Add to Cart
+</button>
               </div>
             </div>
           </article>
 
-          <article class="product-card reveal" data-category="accessory" data-name="Orbit Watch">
+          <article
+  class="product-card reveal"
+  data-category="accessory"
+  data-name="Orbit Watch"
+  data-description="Elegant smartwatch with health and fitness tracking."
+>
             <div class="product-image-wrap">
               <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80" alt="Orbit Watch" />
               <span class="product-badge">Limited</span>
+              <button class="wishlist-btn" type="button" data-id="orbit-watch" aria-label="Add to favorites">
+    ♡
+  </button>
             </div>
             <div class="product-body">
               <p class="product-category">Accessory</p>
@@ -224,15 +304,31 @@
                   <span class="old-price">$299</span>
                   <span class="product-price">$249</span>
                 </div>
-                <button class="btn btn-primary">Add to Cart</button>
+                <button
+  class="btn btn-primary add-to-cart-btn"
+  data-id="orbit-watch"
+  data-name="Orbit Watch"
+  data-price="249"
+  data-image="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80"
+>
+  Add to Cart
+</button>
               </div>
             </div>
           </article>
 
-          <article class="product-card reveal" data-category="accessory" data-name="Volt Charger Max">
+          <article
+  class="product-card reveal"
+  data-category="accessory"
+  data-name="Volt Charger Max"
+  data-description="Fast compact charger for smartphones and tablets."
+>
             <div class="product-image-wrap">
               <img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=900&q=80" alt="Volt Charger Max" />
               <span class="product-badge">Sale</span>
+              <button class="wishlist-btn" type="button" data-id="volt-charger-max" aria-label="Add to favorites">
+    ♡
+  </button>
             </div>
             <div class="product-body">
               <p class="product-category">Accessory</p>
@@ -243,15 +339,31 @@
                   <span class="old-price">$69</span>
                   <span class="product-price">$49</span>
                 </div>
-                <button class="btn btn-primary">Add to Cart</button>
+                <button
+  class="btn btn-primary add-to-cart-btn"
+  data-id="volt-charger-max"
+  data-name="Volt Charger Max"
+  data-price="49"
+  data-image="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=900&q=80"
+>
+  Add to Cart
+</button>
               </div>
             </div>
           </article>
 
-          <article class="product-card reveal" data-category="smartphone" data-name="Lite One">
+          <article
+  class="product-card reveal"
+  data-category="smartphone"
+  data-name="Lite One"
+  data-description="Affordable smartphone with balanced performance."
+>
             <div class="product-image-wrap">
               <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=900&q=80" alt="Lite One" />
               <span class="product-badge">Popular</span>
+              <button class="wishlist-btn" type="button" data-id="lite-one" aria-label="Add to favorites">
+    ♡
+  </button>
             </div>
             <div class="product-body">
               <p class="product-category">Smartphone</p>
@@ -262,11 +374,24 @@
                   <span class="old-price">$499</span>
                   <span class="product-price">$399</span>
                 </div>
-                <button class="btn btn-primary">Add to Cart</button>
+                <button
+  class="btn btn-primary add-to-cart-btn"
+  data-id="lite-one"
+  data-name="Lite One"
+  data-price="399"
+  data-image="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=900&q=80"
+>
+  Add to Cart
+</button>
               </div>
             </div>
           </article>
         </div>
+        <div class="load-more-wrap">
+  <button class="btn btn-secondary" id="load-more-btn" type="button">
+    Load More
+  </button>
+</div>
       </div>
     </section>
 
@@ -350,6 +475,142 @@
       </div>
     </div>
   </footer>
+<div class="cart-overlay" id="cart-overlay"></div>
+
+<aside class="cart-sidebar" id="cart-sidebar" aria-hidden="true">
+  <div class="cart-sidebar-header">
+    <h2>Your Cart</h2>
+    <button class="cart-close-btn" id="cart-close-btn" aria-label="Close cart">✕</button>
+  </div>
+
+  <div class="cart-sidebar-body" id="cart-items">
+    <div class="cart-empty">
+      <p>Your cart is empty.</p>
+    </div>
+  </div>
+
+  <div class="cart-sidebar-footer">
+    <div class="cart-summary">
+      <span>Subtotal</span>
+      <strong id="cart-subtotal">$0</strong>
+    </div>
+<button class="btn btn-primary" id="checkout-btn" type="button">Checkout</button>
+  </div>
+</aside>
+
+<div class="product-modal-overlay" id="product-modal-overlay"></div>
+
+<div class="product-modal" id="product-modal" aria-hidden="true">
+  <div class="product-modal-dialog">
+    <button class="product-modal-close" id="product-modal-close" aria-label="Close product modal">
+      ✕
+    </button>
+
+    <div class="product-modal-content">
+      <div class="product-modal-image">
+        <img id="product-modal-image" src="" alt="" />
+      </div>
+
+      <div class="product-modal-info">
+        <p class="product-modal-category" id="product-modal-category"></p>
+        <h2 id="product-modal-title"></h2>
+        <p class="product-modal-description" id="product-modal-description"></p>
+        <div class="product-modal-price" id="product-modal-price"></div>
+
+        <button
+          class="btn btn-primary product-modal-add-btn"
+          id="product-modal-add-btn"
+          type="button"
+        >
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="success-popup" id="success-popup" aria-hidden="true">
+  <div class="success-popup-icon">✓</div>
+  <div class="success-popup-content">
+    <strong id="success-popup-title">Success</strong>
+    <p id="success-popup-text">Action completed successfully.</p>
+  </div>
+</div>
+
+<div class="checkout-overlay" id="checkout-overlay"></div>
+
+<div class="checkout-modal" id="checkout-modal" aria-hidden="true">
+  <div class="checkout-dialog">
+    <button class="checkout-close-btn" id="checkout-close-btn" aria-label="Close checkout">
+      ✕
+    </button>
+
+    <div class="checkout-head">
+      <p class="checkout-label">Secure Checkout</p>
+      <h2>Complete your order</h2>
+      <p>Demo checkout form for presentation purposes only.</p>
+    </div>
+
+    <form class="checkout-form" id="checkout-form">
+      <div class="checkout-grid">
+        <div class="checkout-field checkout-field-full">
+          <label for="checkout-name">Full name</label>
+          <input id="checkout-name" type="text" placeholder="John Carter" required />
+        </div>
+
+        <div class="checkout-field checkout-field-full">
+          <label for="checkout-email">Email address</label>
+          <input id="checkout-email" type="email" placeholder="john@email.com" required />
+        </div>
+
+        <div class="checkout-field checkout-field-full">
+          <label for="checkout-card">Card number</label>
+          <input id="checkout-card" type="text" placeholder="1234 5678 9012 3456" maxlength="19" required />
+        </div>
+
+        <div class="checkout-field">
+          <label for="checkout-expiry">Expiry date</label>
+          <input id="checkout-expiry" type="text" placeholder="MM/YY" maxlength="5" required />
+        </div>
+
+        <div class="checkout-field">
+          <label for="checkout-cvv">CVV</label>
+          <input id="checkout-cvv" type="text" placeholder="123" maxlength="4" required />
+        </div>
+      </div>
+
+      <div class="checkout-summary">
+        <span>Total</span>
+        <strong id="checkout-total">$0.00</strong>
+      </div>
+
+      <button class="btn btn-primary" type="submit">Pay now</button>
+    </form>
+  </div>
+</div>
+
+<div class="auth-overlay" id="auth-overlay"></div>
+
+<div class="auth-modal" id="auth-modal" aria-hidden="true">
+  <div class="auth-dialog">
+    <button class="auth-close-btn" id="auth-close-btn">✕</button>
+
+    <div class="auth-head">
+      <h2 id="auth-title">Login</h2>
+      <p>Fake authentication for demo</p>
+    </div>
+
+    <form id="auth-form" class="auth-form">
+      <input type="text" id="auth-name" placeholder="Your name" required />
+      <input type="email" id="auth-email" placeholder="Email" required />
+      <button class="btn btn-primary" type="submit">Continue</button>
+    </form>
+
+    <button class="auth-logout-btn hidden" id="auth-logout-btn">
+      Logout
+    </button>
+  </div>
+</div>
 
   <script src="main.js"></script>
 </body>
