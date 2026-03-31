@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   revealElements.forEach((el, index) => {
-    el.style.transitionDelay = `${index * 0.08}s`;
+    el.style.transitionDelay = `${index * 0.06}s`;
     revealObserver.observe(el);
   });
 
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     update();
   };
 
-  const statsSection = document.querySelector(".stats");
+  const heroSection = document.querySelector(".hero");
 
   const statsObserver = new IntersectionObserver(
     entries => {
@@ -53,11 +53,50 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     },
-    { threshold: 0.4 }
+    { threshold: 0.3 }
   );
 
-  if (statsSection) {
-    statsObserver.observe(statsSection);
+  if (heroSection) {
+    statsObserver.observe(heroSection);
+  }
+
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const productCards = document.querySelectorAll(".product-card");
+  const searchInput = document.getElementById("product-search");
+
+  let currentFilter = "all";
+  let currentSearch = "";
+
+  const filterProducts = () => {
+    productCards.forEach(card => {
+      const category = card.dataset.category.toLowerCase();
+      const name = card.dataset.name.toLowerCase();
+
+      const matchesFilter = currentFilter === "all" || category === currentFilter;
+      const matchesSearch = name.includes(currentSearch);
+
+      if (matchesFilter && matchesSearch) {
+        card.classList.remove("hidden");
+      } else {
+        card.classList.add("hidden");
+      }
+    });
+  };
+
+  filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      filterButtons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+      currentFilter = button.dataset.filter.toLowerCase();
+      filterProducts();
+    });
+  });
+
+  if (searchInput) {
+    searchInput.addEventListener("input", e => {
+      currentSearch = e.target.value.trim().toLowerCase();
+      filterProducts();
+    });
   }
 
   const form = document.querySelector(".contact-form");
@@ -65,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (form) {
     form.addEventListener("submit", e => {
       e.preventDefault();
-      alert("Thank you! Your message has been sent.");
+      alert("Thank you! Your request has been sent.");
       form.reset();
     });
   }

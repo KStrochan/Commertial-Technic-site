@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TechStore</title>
+  <title>TechStore Pro</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -11,91 +11,121 @@
     <div class="container header-inner">
       <a href="#" class="logo">
         <span class="logo-mark">TS</span>
-        <span class="logo-text">TechStore</span>
+        <span class="logo-text">TechStore Pro</span>
       </a>
 
       <nav class="nav">
-        <a href="#features">Features</a>
+        <a href="#categories">Categories</a>
         <a href="#products">Products</a>
+        <a href="#deals">Deals</a>
         <a href="#contact">Contact</a>
       </nav>
 
-      <a href="#products" class="btn btn-primary">Shop Now</a>
+      <div class="header-actions">
+        <button class="icon-btn" aria-label="Search">⌕</button>
+        <button class="cart-btn" aria-label="Cart">
+          Cart
+          <span class="cart-count">3</span>
+        </button>
+      </div>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="container hero-content">
+      <div class="container hero-grid">
         <div class="hero-text reveal">
-          <span class="hero-badge">Modern Electronics Store</span>
-          <h1>Clean and responsive e-commerce landing page</h1>
+          <span class="hero-badge">Modern electronics storefront</span>
+          <h1>Smarter shopping experience for modern tech brands</h1>
           <p>
-            A stylish website concept for electronics stores with a modern layout,
-            product highlights, and strong business presentation.
+            A responsive e-commerce website concept with product filters, search,
+            modern cards, and conversion-focused layout.
           </p>
 
           <div class="hero-actions">
-            <a href="#products" class="btn btn-primary">Explore Products</a>
-            <a href="#contact" class="btn btn-secondary">Contact Us</a>
+            <a href="#products" class="btn btn-primary">Shop Products</a>
+            <a href="#contact" class="btn btn-secondary">Get Website Like This</a>
           </div>
+
+          <div class="hero-stats">
+  <div>
+    <strong>
+      <span class="stat-number" data-target="120">0</span>
+      <span class="stat-suffix">+</span>
+    </strong>
+    <span>Products</span>
+  </div>
+
+  <div>
+    <strong>
+      <span class="stat-number" data-target="24">0</span>
+      <span class="stat-suffix">/7</span>
+    </strong>
+    <span>Support</span>
+  </div>
+
+  <div>
+    <strong>
+      <span class="stat-number" data-target="98">0</span>
+      <span class="stat-suffix">%</span>
+    </strong>
+    <span>Positive Reviews</span>
+  </div>
+</div>
         </div>
 
-        <div class="hero-card reveal">
-          <img
-            src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80"
-            alt="Phone"
-          />
-          <div class="hero-card-info">
-            <p class="product-label">Featured Product</p>
-            <h3>Nova X Pro</h3>
-            <p class="price">$899</p>
+        <div class="hero-preview reveal">
+          <div class="preview-card preview-large">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80" alt="Phone" />
+            <div class="preview-info">
+              <p>Featured Product</p>
+              <h3>Nova X Pro</h3>
+              <span>$899</span>
+            </div>
+          </div>
+
+          <div class="preview-small-grid">
+            <div class="preview-card">
+              <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80" alt="Headphones" />
+            </div>
+            <div class="preview-card">
+              <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80" alt="Laptop" />
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="stats">
-      <div class="container stats-grid">
-        <div class="stat-card reveal">
-          <h3><span class="stat-number" data-target="100">0</span>+</h3>
-          <p>Products Available</p>
-        </div>
-        <div class="stat-card reveal">
-          <h3><span class="stat-number" data-target="24">0</span>/7</h3>
-          <p>Customer Support</p>
-        </div>
-        <div class="stat-card reveal">
-          <h3><span class="stat-number" data-target="99">0</span>%</h3>
-          <p>Customer Satisfaction</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="features" id="features">
+    <section class="categories" id="categories">
       <div class="container">
         <div class="section-head reveal">
-          <h2>Why choose this store</h2>
-          <p>
-            This landing page is designed to help electronics businesses present
-            products clearly and professionally.
-          </p>
+          <h2>Shop by category</h2>
+          <p>Simple category blocks that make product navigation easy.</p>
         </div>
 
-        <div class="features-grid">
-          <article class="feature-card reveal">
-            <h3>Modern Design</h3>
-            <p>Clean layout with a premium look for modern online stores.</p>
+        <div class="categories-grid">
+          <article class="category-card reveal">
+            <div class="category-icon">📱</div>
+            <h3>Smartphones</h3>
+            <p>Premium and budget phones for daily use.</p>
           </article>
 
-          <article class="feature-card reveal">
-            <h3>Responsive Layout</h3>
-            <p>Works smoothly on desktop, tablet, and mobile devices.</p>
+          <article class="category-card reveal">
+            <div class="category-icon">💻</div>
+            <h3>Laptops</h3>
+            <p>Portable power for work, study, and gaming.</p>
           </article>
 
-          <article class="feature-card reveal">
-            <h3>Fast Experience</h3>
-            <p>Simple structure with easy navigation and product presentation.</p>
+          <article class="category-card reveal">
+            <div class="category-icon">🎧</div>
+            <h3>Audio</h3>
+            <p>Headphones, earbuds, and wireless speakers.</p>
+          </article>
+
+          <article class="category-card reveal">
+            <div class="category-icon">⌚</div>
+            <h3>Accessories</h3>
+            <p>Chargers, smartwatches, and daily essentials.</p>
           </article>
         </div>
       </div>
@@ -104,72 +134,192 @@
     <section class="products" id="products">
       <div class="container">
         <div class="section-head reveal">
-          <h2>Featured Products</h2>
-          <p>Simple product cards for showcasing your best items.</p>
+          <h2>Featured products</h2>
+          <p>A more realistic store layout with filters and search.</p>
         </div>
 
-        <div class="products-grid">
-          <article class="product-card reveal">
-            <img
-              src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80"
-              alt="Smartphone"
-            />
-            <div class="product-card-body">
+        <div class="products-toolbar reveal">
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="smartphone">Smartphones</button>
+            <button class="filter-btn" data-filter="laptop">Laptops</button>
+            <button class="filter-btn" data-filter="audio">Audio</button>
+            <button class="filter-btn" data-filter="accessory">Accessories</button>
+          </div>
+
+          <div class="search-box">
+            <input type="text" id="product-search" placeholder="Search product..." />
+          </div>
+        </div>
+
+        <div class="products-grid" id="products-grid">
+          <article class="product-card reveal" data-category="smartphone" data-name="Nova X Pro">
+            <div class="product-image-wrap">
+              <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80" alt="Nova X Pro" />
+              <span class="product-badge">Best Seller</span>
+            </div>
+            <div class="product-body">
               <p class="product-category">Smartphone</p>
               <h3>Nova X Pro</h3>
-              <p class="product-price">$899</p>
-              <button class="btn btn-primary">View Product</button>
+              <p class="product-description">Flagship performance with premium camera and display.</p>
+              <div class="product-bottom">
+                <div>
+                  <span class="old-price">$999</span>
+                  <span class="product-price">$899</span>
+                </div>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
             </div>
           </article>
 
-          <article class="product-card reveal">
-            <img
-              src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80"
-              alt="Laptop"
-            />
-            <div class="product-card-body">
+          <article class="product-card reveal" data-category="laptop" data-name="AeroBook 14">
+            <div class="product-image-wrap">
+              <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80" alt="AeroBook 14" />
+              <span class="product-badge">New</span>
+            </div>
+            <div class="product-body">
               <p class="product-category">Laptop</p>
               <h3>AeroBook 14</h3>
-              <p class="product-price">$1249</p>
-              <button class="btn btn-primary">View Product</button>
+              <p class="product-description">Slim and powerful laptop for work and productivity.</p>
+              <div class="product-bottom">
+                <div>
+                  <span class="old-price">$1399</span>
+                  <span class="product-price">$1249</span>
+                </div>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
             </div>
           </article>
 
-          <article class="product-card reveal">
-            <img
-              src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80"
-              alt="Headphones"
-            />
-            <div class="product-card-body">
+          <article class="product-card reveal" data-category="audio" data-name="Pulse Studio">
+            <div class="product-image-wrap">
+              <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80" alt="Pulse Studio" />
+              <span class="product-badge">Hot Deal</span>
+            </div>
+            <div class="product-body">
               <p class="product-category">Audio</p>
               <h3>Pulse Studio</h3>
-              <p class="product-price">$199</p>
-              <button class="btn btn-primary">View Product</button>
+              <p class="product-description">Wireless headphones with strong bass and clean sound.</p>
+              <div class="product-bottom">
+                <div>
+                  <span class="old-price">$249</span>
+                  <span class="product-price">$199</span>
+                </div>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="accessory" data-name="Orbit Watch">
+            <div class="product-image-wrap">
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80" alt="Orbit Watch" />
+              <span class="product-badge">Limited</span>
+            </div>
+            <div class="product-body">
+              <p class="product-category">Accessory</p>
+              <h3>Orbit Watch</h3>
+              <p class="product-description">Elegant smartwatch with health and fitness tracking.</p>
+              <div class="product-bottom">
+                <div>
+                  <span class="old-price">$299</span>
+                  <span class="product-price">$249</span>
+                </div>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="accessory" data-name="Volt Charger Max">
+            <div class="product-image-wrap">
+              <img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=900&q=80" alt="Volt Charger Max" />
+              <span class="product-badge">Sale</span>
+            </div>
+            <div class="product-body">
+              <p class="product-category">Accessory</p>
+              <h3>Volt Charger Max</h3>
+              <p class="product-description">Fast compact charger for smartphones and tablets.</p>
+              <div class="product-bottom">
+                <div>
+                  <span class="old-price">$69</span>
+                  <span class="product-price">$49</span>
+                </div>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="smartphone" data-name="Lite One">
+            <div class="product-image-wrap">
+              <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=900&q=80" alt="Lite One" />
+              <span class="product-badge">Popular</span>
+            </div>
+            <div class="product-body">
+              <p class="product-category">Smartphone</p>
+              <h3>Lite One</h3>
+              <p class="product-description">Affordable smartphone with balanced performance.</p>
+              <div class="product-bottom">
+                <div>
+                  <span class="old-price">$499</span>
+                  <span class="product-price">$399</span>
+                </div>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="cta reveal">
-      <div class="container cta-box">
-        <h2>Ready to build your store?</h2>
-        <p>
-          This layout can be customized for electronics, gadgets, accessories,
-          and other product-based businesses.
-        </p>
-        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+    <section class="deals" id="deals">
+      <div class="container">
+        <div class="deals-box reveal">
+          <div>
+            <p class="deals-label">Limited weekly offer</p>
+            <h2>Up to 35% off selected devices</h2>
+            <p>
+              Clean promotional section for showing discounts and seasonal campaigns.
+            </p>
+          </div>
+          <a href="#products" class="btn btn-primary">See Deals</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Customer feedback</h2>
+          <p>Simple testimonial section for stronger product trust.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal">
+            <p>“Very clean online store. Products are easy to browse and the layout feels premium.”</p>
+            <span>Sample Client</span>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <p>“Great structure for an electronics business. Modern and responsive on all devices.”</p>
+            <span>Sample Client</span>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <p>“Exactly the kind of storefront that helps products stand out and look professional.”</p>
+            <span>Sample Client</span>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="contact" id="contact">
       <div class="container contact-grid">
         <div class="contact-info reveal">
-          <h2>Contact Us</h2>
+          <h2>Need a store like this?</h2>
           <p>
-            Let’s create a clean and modern online store for your business.
+            This e-commerce concept can be adapted for electronics, gadgets,
+            accessories, and other product-based businesses.
           </p>
-          <p>Email: hello@techstore.com</p>
+          <p>Email: hello@techstorepro.com</p>
           <p>Phone: +1 (000) 123-4567</p>
           <p>Location: New York, USA</p>
         </div>
@@ -177,8 +327,9 @@
         <form class="contact-form reveal">
           <input type="text" placeholder="Your name" required />
           <input type="email" placeholder="Your email" required />
-          <textarea placeholder="Your message" required></textarea>
-          <button type="submit" class="btn btn-primary">Send Message</button>
+          <input type="text" placeholder="Project type" required />
+          <textarea placeholder="Tell me about your store project" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Request</button>
         </form>
       </div>
     </section>
@@ -186,7 +337,17 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2026 TechStore. All rights reserved.</p>
+      <div>
+        <strong>TechStore Pro</strong>
+        <p>Modern responsive e-commerce website concept.</p>
+      </div>
+      <div>
+        <p>Pages</p>
+        <span>Home · Products · Deals · Contact</span>
+      </div>
+      <div>
+        <p>© 2026 All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
